@@ -23,6 +23,12 @@ namespace TorokDonat_Szamologep
             return a / b;
         }
 
+        static int Szorzas(int a, int b)
+        {
+            return a * b;
+        }
+
+
         static void Main(string[] args)
         {
         }
