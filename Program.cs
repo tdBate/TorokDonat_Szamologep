@@ -8,6 +8,12 @@ namespace TorokDonat_Szamologep
 {
     internal class Program
     {
+        static int Osszeadas(int a, int b)
+        {
+            return a + b;
+        }
+
+
         static void Main(string[] args)
         {
         }
