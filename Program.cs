@@ -28,6 +28,10 @@ namespace TorokDonat_Szamologep
             return a * b;
         }
 
+        static int Szazalek(int a, int b)
+        {
+            return (a/b)*100;
+        }
 
         static void Main(string[] args)
         {
