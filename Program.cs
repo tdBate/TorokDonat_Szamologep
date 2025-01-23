@@ -18,6 +18,10 @@ namespace TorokDonat_Szamologep
             return a - b;
         }
 
+        static int Osztas(int a, int b)
+        {
+            return a / b;
+        }
 
         static void Main(string[] args)
         {
