@@ -8,32 +8,32 @@ namespace TorokDonat_Szamologep
 {
     internal class Program
     {
-        static int Osszeadas(int a, int b)
+        static double Osszeadas(double a, double b)
         {
             return a + b;
         }
 
-        static int Kivonas(int a, int b)
+        static double Kivonas(double a, double b)
         {
             return a - b;
         }
 
-        static int Osztas(int a, int b)
+        static double Osztas(double a, double b)
         {
             return a / b;
         }
 
-        static int Szorzas(int a, int b)
+        static double Szorzas(double a, double b)
         {
             return a * b;
         }
 
-        static int Szazalek(int a, int b)
+        static double Szazalek(double a, double b)
         {
             return (a/b)*100;
         }
 
-        static void Indit(int a, int b, string muveleti_jel)
+        static void Indit(double a, double b, string muveleti_jel)
         {
             Console.Write("Az eredmény: ");
             switch (muveleti_jel)
@@ -59,10 +59,10 @@ namespace TorokDonat_Szamologep
         static void Main(string[] args)
         {
             Console.Write("Kérem adja meg az első számot: ");
-            int a = int.Parse( Console.ReadLine());
+            double a = double.Parse( Console.ReadLine());
 
             Console.Write("Kérem adja meg az második számot: ");
-            int b = int.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
 
             Console.Write("Az elvégzendő művelet jele: ");
             string muveleti_jel = Console.ReadLine();
