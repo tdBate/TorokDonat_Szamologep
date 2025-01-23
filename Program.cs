@@ -33,6 +33,29 @@ namespace TorokDonat_Szamologep
             return (a/b)*100;
         }
 
+        static void Indit(int a, int b, string muveleti_jel)
+        {
+            Console.Write("Az eredmény: ");
+            switch (muveleti_jel)
+            {
+                case "+":
+                    Console.WriteLine(Osszeadas(a, b));
+                    break;
+                case "-":
+                    Console.WriteLine(Kivonas(a, b));
+                    break;
+                case "/":
+                    Console.WriteLine(Osztas(a, b));
+                    break;
+                case "*":
+                    Console.WriteLine(Szorzas(a, b));
+                    break;
+                case "%":
+                    Console.WriteLine(Szazalek(a, b)+"%");
+                    break;
+            }
+        }
+
         static void Main(string[] args)
         {
             Console.Write("Kérem adja meg az első számot: ");
@@ -43,6 +66,9 @@ namespace TorokDonat_Szamologep
 
             Console.Write("Az elvégzendő művelet jele: ");
             string muveleti_jel = Console.ReadLine();
+
+            Indit(a,b,muveleti_jel);
+            Console.ReadKey();
         }
     }
 }
