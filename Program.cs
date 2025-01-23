@@ -35,6 +35,14 @@ namespace TorokDonat_Szamologep
 
         static void Main(string[] args)
         {
+            Console.Write("Kérem adja meg az első számot: ");
+            int a = int.Parse( Console.ReadLine());
+
+            Console.Write("Kérem adja meg az második számot: ");
+            int b = int.Parse(Console.ReadLine());
+
+            Console.Write("Az elvégzendő művelet jele: ");
+            string muveleti_jel = Console.ReadLine();
         }
     }
 }
