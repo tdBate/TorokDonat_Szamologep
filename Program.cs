@@ -20,7 +20,11 @@ namespace TorokDonat_Szamologep
 
         static double Osztas(double a, double b)
         {
-            return a / b;
+            if (b != 0)
+            {
+                return a / b;
+            }
+            return double.NaN;
         }
 
         static double Szorzas(double a, double b)
@@ -30,7 +34,11 @@ namespace TorokDonat_Szamologep
 
         static double Szazalek(double a, double b)
         {
-            return (a/b)*100;
+            if (b != 0)
+            {
+                return (a / b) * 100;
+            }
+            return double.NaN;
         }
 
         static void Indit(double a, double b, string muveleti_jel)
